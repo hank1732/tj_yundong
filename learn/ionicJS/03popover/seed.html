@@ -1,0 +1,61 @@
+<html ng-app="ionicApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"> 
+    
+    <title>Ionic Popover</title>
+
+    <link href="http://code.ionicframework.com/1.0.0-beta.11/css/ionic.css" rel="stylesheet">
+    <script src="http://code.ionicframework.com/1.0.0-beta.11/js/ionic.bundle.js"></script>
+
+     
+    <!-- your app's js -->
+    <script src="js/controller.js"></script>
+  </head>
+  <body class="platform-ios" ng-controller="AppCtrl">
+    
+    <div class="bar bar-header">
+      <h1 class="title">Popover</h1>
+     
+    </div>
+    <div class="bar bar-subheader">
+      <div class=" button-bar">
+        <button class="button button-light button-android" ng-class="{ 'button\-positive': demo == 'ios' }" ng-click="setPlatform('ios')">
+          iOS
+        </button>
+        <button class="button button-light button-android" ng-class="{ 'button\-positive': demo == 'android' }" ng-click="setPlatform('android')">
+          Android
+        </button>
+        <button class="button button-light button-android" ng-class="{ 'button\-positive': demo == 'ionic' }" ng-click="setPlatform('ionic')">
+          Ionic
+        </button>
+      </div>
+    </div>
+    
+    <ion-content class="padding has-subheader">
+      Click the more info icon in the top right. In an actual app the platform style will automatically be set.
+       <div class="buttons">
+        <button class="button button-icon ion-more" ng-click="popover.show($event)">
+        </button>
+         <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on left
+</button>    
+      </div>
+    </ion-content>
+    
+    <script id="popover.html" type="text/ng-template">
+      <ion-popover-view>
+        <ion-content>
+         <ion-toggle ng-model="airplaneMode" toggle-class="toggle-calm">Airplane Mode</ion-toggle>
+          <div style="width:500px;height:100%;position:absolute;" class="list">
+            <a class="item" href="http://learn.ionicframework.com/" target="_blank">
+              Learn Ionic    
+         
+            </a>
+          </div> 
+        </ion-content>
+      </ion-popover-view>
+    </script>
+    
+  </body>
+</html>

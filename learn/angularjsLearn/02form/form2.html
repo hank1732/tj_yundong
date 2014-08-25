@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app>
+<head>  
+  <link href="css/cs.css" rel="stylesheet">
+  <script src="lib/angular.min.js"></script>
+  <script>
+     function StudentListController($scope){
+          $scope.students = [
+            {name:"LiuSong",id:"1"},
+            {name:"XiaYan",id:"2"},
+            {name:"HanBing",id:"3"}
+          ];
+        }
+        function StudentList($scope){
+          $scope.students = [
+            {name:"1",id:"1"},
+            {name:"2",id:"2"},
+            {name:"3",id:"3"}
+          ];
+        }
+    </script>
+</head>
+<body>
+  <ul ng-controller="StudentListController">
+    <li ng-class="{selected:$index%2==1}" ng-repeat="student in students">
+      <a href="{{student.id}}">{{student.name}}</a>
+    </li>
+  </ul>
+  <ul ng-controller="StudentList">
+    <li ng-repeat="student in students">
+      <a href="{{student.id}}">{{student.name}}</a>
+    </li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="seed">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>seed</title>
+  <link href="css/cs.css" rel="stylesheet">
+  <script src="lib/angular.min.js"></script>
+  <script src="js/controller.js"></script>
+</head>
+
+<body ng-controller="seedController" >
+  <form ng-submit="doSubmit()" style="display:inline">
+    请输入
+    <input ng-change="computeNeeded()" ng-model="funding.start">
+    REcommandation:{{funding.needed}}
+    <br>
+    <button type="submit">start!</button>
+  </form>
+    <button ng-click="funding.needed=10">init!</button>
+    <button ng-click="alert(funding.needed)">plus,plus!</button>
+    <button ng-click="al()">al,al!</button>
+</body>
+</html>

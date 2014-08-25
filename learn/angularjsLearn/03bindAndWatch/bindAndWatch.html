@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="seed">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>seed</title>
+  <script src="lib/angular.min.js"></script>
+  <script src="js/controller.js"></script>
+</head>
+
+<body>
+  <div ng-controller="seedController" >
+    直接输入
+    <br>
+    请输入
+    <input ng-model="someText.message">
+    <span>{{someText.message}}</span>
+    <hr>
+    <hr>
+    函数监视
+    <br>
+    请输入
+    <input ng-change="computeNeeded()" ng-model="funding.start">REcommandation:{{funding.needed}}</div>
+  <div ng-controller="watchController" >
+    <hr>
+    <hr>
+    watch监视
+    <br>
+    请输入
+    <input ng-change="computeNeeded()" ng-model="funding.start">REcommandation:{{funding.needed}}</div>
+
+</body>
+</html>
