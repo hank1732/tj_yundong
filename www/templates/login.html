@@ -1,0 +1,47 @@
+<ion-view  title="登录">
+  <!-- 回退按钮 -->
+  <ion-nav-bar class="bar-stable"  animation="slide-in-left">
+    <a nav-clear href="#">
+      <button class="button button-clear"> <i class="icon ion-ios7-arrow-back"></i>
+      </button>
+    </a>
+  </ion-nav-bar>
+  <!-- /回退按钮 -->
+  <ion-content>
+    <form ng-submit="">
+      <div class="list list-inset">
+        <label class="item item-input">
+          <i class="icon ion-ios7-person placeholder-icon"></i>
+          <input type="text" placeholder="请输入您的邮箱/手机号"></label>
+        <label class="item item-input">
+          <i class="icon ion-ios7-locked placeholder-icon"></i>
+          <input type="password" placeholder="请输入您的密码"></label>
+      </div>
+      <div class="list padding">
+        <button class="button button-block button-balanced" ng-click="login()">登录</button>
+        <div class="padding operate">
+          <span>
+            <a href="#/app/register">注册新会员</a>
+          </span>
+          <span>
+            <a href="#/app/password">忘记密码？</a>
+          </span>
+        </div>
+      </div>
+      <div class="list padding">
+        <div class="otherLogin">
+          <p>——————其他账号登录——————</p>
+          <a href="#">
+            <img src="img/QQ.png" />
+          </a>
+          <a href="#">
+            <img src="img/wechat.png" />
+          </a>
+          <a href="#">
+            <img src="img/weibo.png" />
+          </a>
+        </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

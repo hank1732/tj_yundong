@@ -1,0 +1,295 @@
+/* Empty. Add your own CSS if you like */
+a{
+	text-decoration: none;
+}
+.cb{
+	clear:both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.w20{
+	width:20%;
+}
+.w80{
+	width:80%;
+}
+.w30{
+	width:30%;
+}
+.w70{
+	width:70%;
+}
+.w40{
+	width:40%;
+}
+.w60{
+	width:60%;
+}
+.w100{
+	width:100%;
+}
+/*首页*/
+.txt-center{
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.badminton{
+	height: 100px;
+	line-height: 100px;
+}
+.basketball{
+	height: 100px;
+	line-height: 100px;
+}
+.pingpong{
+	height: 100px;
+	line-height: 100px;
+}
+.time{
+	height: 320px;
+	line-height: 320px;
+}
+
+/*登录*/
+.operate a{
+	text-decoration: none;
+	color: #6d6d72;
+}
+.operate span:first-child{
+	float: left;
+}
+.operate span:last-child{
+	float: right;
+}
+.otherLogin p{
+	text-align: center;
+	color: #6d6d72;
+	line-height: 40px;
+}
+.otherLogin a{
+	display: block;
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+}
+.otherLogin a:last-child{
+	margin: 0;
+}
+.otherLogin a img{
+	width: 100%;
+}
+
+
+.useDetail{
+	background:#f1f1f1;
+	font-size: 1.2em;
+}
+.useDetail .row{
+	line-height:40px;
+	margin-top: 0;
+	border-bottom: 1px solid #ddd;
+	padding: 0;
+}
+.useDetail .col{
+	padding-left:15px;
+	padding-top: 10px;
+	background:#fff;
+}
+.useDetail .mar{
+	margin-bottom: 30px;
+}
+.useDetail .headerText{
+	line-height:65px;
+	width: 100px;
+}
+.useDetail .headerImg img{
+	border-radius: 200px;
+	width:50px;
+}
+.vertical-mg{
+	margin:15px 0;
+}
+.userImg .name{
+	line-height: 60px;
+	float: left;
+	margin-left: 64px;
+}
+.userImg img{
+	width:64px;
+	border-radius:200px;
+	border:6px solid #eee;
+}
+.userInfo a{
+	text-decoration: none;
+}
+
+/*资源列表*/
+.resListNavHeader{
+	padding: 0;
+}
+.resListNav {
+	padding-top: 5px;
+	background: #FFA95A;
+	border-bottom: 1px solid #A57142;
+}
+.resListNav li{
+	position: relative;
+	float: left;
+	height: 43px;
+	width:33%;
+	/*margin-right: 1%;*/
+	border-right: 1px solid #ccc;
+}
+.resListNav li:last-child{
+	float: left;
+	margin-right: 0;
+	border:none;
+}
+.resListNav_itemContent{	
+	padding-right: 20px;	
+	text-align: center;
+	line-height: 43px;
+}
+.resListNav_itemImg{
+	position: absolute;
+	top: 11px;
+	right: 10px;
+	margin-right: 2px;
+}
+.resTitle{
+	float:left;
+}
+.itemImg{
+	width:100px;
+	margin-right:2%;
+}
+.resListPrise{
+	color:red;
+	font-size: 20px;
+}
+.resListNum{
+	font-size: 13px;
+}
+.resListDistance{
+	font-size: 13px;
+}
+.resListContent .resListLocation{
+	font-size: 10px;
+	text-overflow:none;
+	white-space:normal;
+	line-height: 16px;
+	height: 32px;
+	overflow: hidden;
+}
+.emptyTip{
+	text-align: center;
+}
+.resListFilter{
+	position: fixed;
+	right: 15px;
+	bottom: 30px;
+	padding: 7px 0px 0px 3px;
+	width: 45px;
+	height: 45px;
+	font-size: 5px;
+	background: #FD800D;
+	border-radius: 200px;
+}
+.resListFilter i{
+	color: white;
+}
+.resListNav_hideFrame{
+	/*height: 50px;
+	transition:all 5s linear;*/
+}
+.resListNav_hideFrameItem{
+	position: relative;
+	background: #FFA95A;
+	/*visibility: hidden;*/
+}
+.resListNav_hideItem{
+	line-height: 35px;
+}
+.resListNav_selected{
+	background: #F68822;
+}
+.resListNav_hideItemContent{
+	padding-left:10%;
+}
+.resListNav_hideItem:active{
+	background: #F0F821;
+}
+/*资源列表*/
+/*资源详情*/
+.resIntro{
+	margin-bottom: 10px;
+}
+.resInfo_content{
+	padding: 10px;
+	background-color: #fff;
+}
+.resIntro_text{
+	padding-left: 10px;
+}
+.resIntro_item{
+	height: 32px;
+	line-height: 32px;
+	padding:0 10px;
+}
+.resIntro_item_text{
+	padding:0 10px;
+	font-size: 14px;
+	line-height: 32px;
+}
+.resBook{
+	padding:0 10px;
+	background-color: #fff;
+}
+.resBook_date{	
+	border: 1px solid black;
+}
+.resBook_date_time{
+	float: left;
+	display: inline-block;
+	height: 30px;
+	text-align: center;	
+	padding-top: 5px;
+}
+.resBook_date_time span{
+	margin-right: 5px;
+}
+.resBook_date .resBook_date_period{
+	float: left;
+	font-size: 30px;
+	padding: 0 15px;
+}
+.resBook_time table{
+	border-collapse: collapse;
+	width: 100%;
+}
+.resBook_time table tr{
+	line-height: 35px;	
+}
+.resBook_time table td{
+	text-align: center;
+	background: #eee;	
+	border: 1px solid black;
+}
+.resBook_time table td:after{
+	content: "元";
+}
+.resBook_prise{
+	margin: 10px;
+	text-align: right;
+}
+.resBook_prise_text{
+	font-size: 20px;
+	color:red;
+}
+/*资源详情*/

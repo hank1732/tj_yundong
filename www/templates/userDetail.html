@@ -1,0 +1,52 @@
+<ion-view title="个人信息" class="useDetail">
+<!-- 只在本页面添加的按钮 -->
+   <ion-nav-bar class="bar-stable"  animation="nav-title-slide-ios7">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <a class="button button-icon icon ion-ios7-search-strong" href="#/app/search"></a>
+  </ion-nav-buttons>
+</ion-nav-bar>
+  <!-- 只在本页面添加的按钮 -->
+	<ion-content>
+		<div class="row mar">
+			<div class="col col-33 headerText">头像</div>
+			<div class="col headerImg">
+				<img ng-src="{{user.headImgUrl}}">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">名字</div>
+			<div class="col col-67">{{user.nickname}}</div>
+		</div>
+		<div class="row">
+			<div class="col">性别</div>
+			<div class="col col-67">{{user.gender}}</div>
+		</div>
+		<div class="row mar">
+			<div class="col">地点</div>
+			<div class="col col-67">{{user.country}} {{user.province}} {{user.city}}</div>
+		</div>
+		<div class="row">
+			<div class="col">邮箱</div>
+			<div class="col col-67">{{user.email}}</div>
+		</div>
+		<div class="row mar">
+			<div class="col">手机</div>
+			<div class="col col-67">{{user.mobile}}</div>
+		</div>
+		<div class="row">
+			<div class="col">微信</div>
+			<div class="col col-67">{{user.wechat}}</div>
+		</div>
+		<div class="row">
+			<div class="col">微博</div>
+			<div class="col col-67"></div>
+		</div>
+		<div class="row">
+			<div class="col">支付宝</div>
+			<div class="col col-67">{{user.zhifubao}}</div>
+		</div>
+</ion-content>
+</ion-view>

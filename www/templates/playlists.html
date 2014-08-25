@@ -1,0 +1,43 @@
+<ion-view title="首页">
+  <!-- 只在本页面添加的按钮 -->
+  <ion-nav-bar class="bar-stable"  animation="nav-title-slide-ios7">
+    <ion-nav-buttons side="left">
+      <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+      <a class="button button-icon icon ion-ios7-search-strong" ng-href="#/app/search"></a>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <!-- /只在本页面添加的按钮 -->
+
+  <ion-content  >
+
+    <div class="row">
+        
+    <!-- <button on-swipe-up="onSwipeUp()" class="button" style="position:fixed;top:400px;left:20px;width:300px;height:300px;">Test</button> -->
+      <div class="col left">
+        <a ng-href="#/app/resourceList?sportName={{Sports[0].sportName}}"><div class="badminton positive-bg txt-center"> <i class="ion-ios7-basketball"></i>
+          {{Sports[0].sportName}}
+        </div></a>
+        <a ng-href="#/app/resourceList?sportName={{Sports[1].sportName}}"><div class="basketball assertive-bg txt-center"> <i class="ion-ios7-basketball"></i>
+          {{Sports[1].sportName}}
+        </div></a>
+        <a ng-href="#/app/resourceList?sportName={{Sports[2].sportName}}"><div class="pingpong calm-bg txt-center">
+          <i class="ion-ios7-basketball"></i>
+          {{Sports[2].sportName}}
+        </div></a>
+      </div>
+      <div class="col right">
+        <div class="time balanced-bg txt-center">
+          <i class="ion-ios7-basketball"></i>
+          时间轴
+        </div>
+      </div>
+    </div>
+
+    <!-- <ion-list>
+    <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">{{playlist.title}}</ion-item>
+  </ion-list>
+  -->
+</ion-content>
+</ion-view>
